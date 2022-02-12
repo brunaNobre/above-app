@@ -1,0 +1,65 @@
+{
+    "plugins": [
+      "simple-import-sort"
+    ],
+    "extends": [
+      "react-app",
+      "airbnb-typescript-prettier"
+    ],
+    "root": true,
+    "env": {
+      "browser": true,
+      "jest": true
+    },
+    "rules": {
+      "@typescript-eslint/explicit-function-return-type": "off",
+      "@typescript-eslint/no-empty-function": "off",
+      "@typescript-eslint/no-explicit-any": "off",
+      "@typescript-eslint/ban-ts-comment": "off",
+      "@typescript-eslint/ban-ts-ignore": "off",
+      "import/prefer-default-export": "off",
+      "import/no-named-as-default": "off",
+      "prettier/prettier": [
+        "error",
+        {
+          "singleQuote": true,
+          "trailingComma": "all"
+        }
+      ],
+      "react/jsx-uses-react": "off",
+      "react/react-in-jsx-scope": "off",
+      "react/require-default-props": "off",
+      "react/jsx-props-no-spreading": [
+        "error",
+        {
+          "custom": "ignore"
+        }
+      ],
+      "simple-import-sort/imports": [
+        "error",
+        {
+          "groups": [["^\\u0000"], ["^react", "^@?\\w"], ["^src(/.*|$)"], ["^\\."]]
+        }
+      ],
+      "sort-imports": "off",
+      "import/order": "off",
+      "camelcase": [
+        "error", { "properties": "always", "ignoreDestructuring": false }
+      ]
+    },
+    "ignorePatterns": [
+      "node_modules",
+      "coverage",
+      "build",
+      "generated"
+    ],
+    "settings": {
+      "import/resolver": {
+        "typescript": {}
+      },
+      "react": {
+        "version": "16.2"
+      }
+    }
+  }
+  
