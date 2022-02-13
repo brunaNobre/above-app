@@ -1,0 +1,12 @@
+{
+    "eslint.workingDirectories": [
+      { "directory": "./src", "changeProcessCWD": true },
+    ],
+    "editor.codeActionsOnSave": {
+      "source.fixAll": true
+    },
+    "[graphql]": {
+      "editor.formatOnSave": true
+    }
+  }
+  
